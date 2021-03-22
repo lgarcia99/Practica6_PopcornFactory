@@ -8,31 +8,65 @@
     android:background="@color/dark"
     tools:context=".DetallePelicula">
 
-    <ImageView
-        android:id="@+id/tv_pelicula_img"
+    <ScrollView
         android:layout_width="match_parent"
-        android:src="@drawable/bonesheader"
-        android:layout_height="350dp"
-        android:scaleType="centerCrop"/>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:padding="15dp"
-        android:textColor="@color/yellow"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:text="BONES"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_pelicula_titulo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:padding="15dp"
-        android:textColor="@color/light"
-        android:textSize="14sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingHorizontal="5dp"
-        android:text="diam maecenas ultricies mi eget mauris pharetra et ultrices neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis"
-        android:id="@+id/tv_pelicula_desc"/>
+            <ImageView
+                android:id="@+id/tv_pelicula_img"
+                android:layout_width="match_parent"
+                android:src="@drawable/bonesheader"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:padding="15dp"
+                android:textColor="@color/yellow"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="BONES"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_pelicula_titulo"/>
+
+            <TextView
+                android:padding="15dp"
+                android:textColor="@color/light"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="5dp"
+                android:text="diam maecenas ultricies mi eget mauris pharetra et ultrices neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis"
+                android:id="@+id/tv_pelicula_desc"/>
+
+            <Button
+                android:id="@+id/buy_ticket"
+                android:background="@drawable/modified_button"
+                android:layout_gravity="center"
+                android:text="Buy ticket"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:paddingHorizontal="39dp"
+                android:layout_height="39dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_grey"
+                android:textStyle="italic"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/seats_left"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
